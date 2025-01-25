@@ -1,15 +1,20 @@
-import React from "react";
-
+import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p>© 2025 My Webpage. All rights reserved.</p>
-      <nav>
-        <a href="#facebook">Facebook</a>
-        <a href="#twitter">Twitter</a>
-        <a href="#instagram">Instagram</a>
-      </nav>
+    <footer className="bg-dark text-light py-4 mt-5">
+      <div className="container text-center">
+        <p>&copy; {new Date().getFullYear()} Your Company. All Rights Reserved.</p>
+        <div>
+          <a href="#privacy" className="text-light mx-2">
+            Privacy Policy
+          </a>
+          |
+          <a href="#terms" className="text-light mx-2">
+            Terms of Service
+          </a>
+        </div>
+      </div>
     </footer>
   );
 };
